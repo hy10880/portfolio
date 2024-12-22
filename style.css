@@ -1,0 +1,583 @@
+
+/*================
+ PC用のスタイル 
+=================*/
+body{
+    background-image:url(images/img_0.png);
+    /* background-repeat: repeat-y; */
+    max-width: 1920px;
+    min-width: 100%;
+    width: 1920px;
+    padding: 0;
+    margin: 0;
+    /* margin:auto; */
+}
+h1,h2,h3,p,ul,li{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 200px;
+    color: orangered;
+    font-family: "kodomo-rounded", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    margin-top: 200px;
+    margin-bottom: 150px;
+}
+h2{font-size: 85px;
+    color: orangered;
+    font-family: "kodomo-rounded", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+h3{font-size: 36px;
+    color: orangered;
+    font-family: "kodomo-rounded", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+p{font-size: 18px;
+    font-family: "maru-maru-gothic-blr-stdn", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+/* ヘッダー */
+header{
+    position: fixed; 
+    width:1920px;
+    height: 140px; 
+    position: relative;
+    background-color: #48d1cc;
+    top: 0; 
+    left: 0; 
+    /* align-items: center; */
+    /* justify-content: space-between;  */
+    z-index: 13;
+}
+header img{
+    position: absolute;
+    left: 40px;
+    bottom: 20px;
+}
+/* nav{
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+} */
+nav ul{
+    list-style-type:none;
+    position:absolute;
+    right: 50px;
+    }
+    nav li{
+        width: 160px;
+        height: 140px;
+        float: left;
+    }
+    nav a{
+        display: block;
+        line-height: 140px;
+        text-align: center;
+        color: orangered;
+        font-size: 18px;   
+    }
+    
+    nav a:hover{
+        color:yellow;
+        font-weight: bold;
+    }
+/* nav li{
+    width: 160px;
+    height: 140px;
+}
+nav a{
+    display: block;
+    line-height: 140px;
+    text-align: center;
+    color: orangered;
+    font-size: 18px;   
+}
+
+nav a:hover{
+    color:yellow;
+    font-weight: bold;
+} */
+main{
+    width:960px;
+    margin: 0;
+    padding: 0;
+
+}
+/*トップ*/
+#top{
+    padding-top: 200px;
+    width: 960px;
+    position: relative;
+    text-align: center;
+    width:auto;
+}
+#top > img{
+    /* position: absolute; */
+    display: inline-block;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+/*ワークス*/
+#works{
+    height: 2800px;
+    width:1920px;
+    position: relative;
+}
+#works >h1{
+    position: absolute;
+    left: 50px;
+    padding-top: 0;
+    margin-top:0;
+}
+#works-syousai{ 
+    position: absolute;
+    top: 300px;
+    z-index: 10;
+}
+.site{
+    display:flex;
+    text-align:center;
+    float: left;
+    margin: 75px 70px;
+} 
+.banner {
+    display:flex;
+    text-align:center;
+    float: left;
+    margin: 75px 70px;
+}
+#works >img{
+    z-index:9;
+    position: absolute;
+    clear: both;
+    top: 150px;
+    left: 0;
+    right: 0;
+}
+ 
+     
+/*about*/
+#aboutme {
+    height: 1750px;
+    width: 1920px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.white1{
+    background-color:rgba(255,255,255,0.3);
+    border-radius: 50px;
+    width:830px;
+    height:500px;
+    position: absolute;
+    right: 250px;
+    bottom:200px;
+    z-index: 10;
+}
+.white1 >p{
+    line-height: 200%;
+    margin: 80px;
+    z-index: 11;
+}
+#moto{
+    position: absolute;
+    right: 50px;
+    bottom:25px;
+    background-color: orange;
+    font-size: 25px;
+    color: azure;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+}
+#aboutme > img{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    top: 150px;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    margin-bottom: 200px;
+}
+#aboutme >h1{
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    z-index: 10;
+}
+
+#contact{
+    position: relative;
+    width: 1920px;
+    height: 1400px;
+}
+#contact>h1{
+    position: absolute;
+    left: 50px;
+}
+#contact>p{
+    position: absolute;
+    top: 500px;
+    left:240px;
+}
+#contact table{
+    position: absolute;
+    top: 700px;
+    left:240px;
+}
+table{
+    clear: both;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    border-collapse: separate;
+}
+th,td{
+    padding: 5px;
+    
+}
+th{
+    width: 150px;
+    height: 45px;
+    background-color: orangered;
+    color: white;
+    text-align: center;
+    border-radius: 45px;
+}
+td{ width: 500px;}
+#submit{
+    text-align: right;
+}
+#contact>img{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 500px;
+    right: 100px;
+}
+/* プロフィール */
+#profile{
+    height:1800px;
+    width: 1920px;
+    position: relative;
+}
+#profile >h1{
+    position: absolute;
+    top: 140px;
+    left: 50px;
+    padding-top: 0;
+    margin-top:0;
+}
+#Purpose{
+    position: absolute;
+    top: 490px;
+    left: 50px;
+}
+#Purpose >h2{
+    position: absolute;
+    padding: 0;
+    margin-top:0;
+    margin-bottom: 65px;
+    left: 50px;
+}
+
+.white2{
+    position: absolute;
+    background-color:rgba(255,255,255,0.3);
+    margin: 0;
+    padding:0px;
+    width: 740px;
+    height: 700px;
+    top: 200px;
+    left: 50px;
+    border-radius: 50px;
+    z-index: 11;
+}
+.white2 >p{
+    position: absolute;
+    line-height: 300%;
+    margin: 50px;
+    z-index: 12;
+    top: 200px;
+}
+/* スキル */
+#Skill{
+    position: absolute;
+    top: 490px;
+    right: 50px;
+}
+#Skill>h2{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    margin-top:0;
+    left: 50px;
+}
+#Skill>p{
+    position: absolute;
+    margin: 25px, 0;
+    padding: 0;
+    top: 150px;
+}
+/* デザイン */
+.white3{
+        position: absolute;
+        background-color:rgba(255,255,255,0.3);
+        margin-bottom: 25px;
+        width: 740px;
+        height: 500px;
+        border-radius: 50px;
+        top: 200px;
+    }
+    .white3 h3{
+        position: absolute;
+        left: 50px;
+        top: 25px;
+    }
+    .white3 p{
+        line-height: 300%;
+        left: 50px;
+        float: left;
+        padding: 20px 45px;
+    }
+/* コーディング */
+    .white4{
+        position: relative;
+        background-color:rgba(255,255,255,0.3);
+        margin-right: 50px;
+        width:740px;
+        height:500px;
+        border-radius: 50px;
+        top: 750px;
+        }
+    .white4 h3{
+        position: absolute;
+        top: 25px;
+        left: 50px;
+        }
+    .white4 p{
+        line-height: 300%;
+        left: 50px;
+        float: left;
+        padding: 20px 50px;
+     }
+     .koumoku{
+        position: absolute;
+        top: 65px;
+        clear: both;
+    }
+
+/* 趣味枠 */
+    #hobby{
+        height: 2000px;
+        width:1920px;
+        position: relative;
+    }
+    #hobby >h2{
+        position: absolute;
+        left: 100px;
+        padding-top: 0;
+        margin-top:0;
+    }
+    #il{
+    position: absolute;
+    width: 1690px;
+    top: 150px;
+    left:115px; 
+    }
+    .illust{
+        float: left;
+        margin: 75px 35px
+    }
+    .illust p{
+    text-align: center;
+    margin-top: 25px;
+    clear: both;
+    }
+    
+/*WEBサイト作品詳細*/
+#site{
+    position:relative;
+    width: 1920px;
+    height:auto;
+    /* text-align: center; */
+}
+
+    .white5{
+        position:absolute;
+        background-color:rgba(255,255,255,0.3);
+        border-radius: 50px;
+        /* text-align: center; */
+        width:1700px;
+        height:1400px;
+        left:160px;
+        top: 340px;
+        /* z-index: 10; */
+    }
+    .white5 img{
+        position: absolute;
+        top: 150px;
+        left:50px;
+        /* z-index: 9; */
+    }
+    .white5 p{
+        position: absolute;
+        line-height: 300%;
+        left: 150px;
+        bottom: 100px;
+    }
+/* PC */
+    .white6{
+        position:relative;
+        background-color:rgba(255,255,255,0.3);
+        border-radius: 50px;
+        /* text-align: center; */
+        width:1700px;
+        /* height:auto; */
+        left:160px;
+        top: 1450px;
+        /* z-index: 9; */
+    }
+    .white6 h2{
+        position: absolute;
+        left: 50px;
+        /* z-index: 10; */
+    }
+
+    .white6 img{
+        margin:40px 350px 20px 350px;
+        z-index: 10;
+        top: 50px;
+    }
+/* SP */
+    .white7{
+        position:relative;
+        background-color:rgba(255,255,255,0.3);
+        border-radius: 50px;
+        /* text-align: center; */
+        width:1700px;
+        /* height:auto; */
+        left:160px;
+        top: 1550px;
+        /* z-index: 9; */
+    }
+    .white7 h2{
+        position: absolute;
+        left: 50px;
+        /* z-index: 10; */
+    }
+
+    .white7 img{
+        margin:40px 350px 20px 350px;
+        z-index: 10;
+        top: 50px;
+    }
+    
+/* バナー */
+.white8{
+    position:relative;
+    background-color:rgba(255,255,255,0.3);
+    border-radius: 50px;
+    /* text-align: center; */
+    width:1700px;
+    height:1500px;
+    left:160px;
+    /* top: 150px; */
+    z-index: 10;
+}
+.white8 img{
+    position: absolute;
+    text-align: center;
+    top: 50px;
+    left:50px;
+    z-index: 9;
+}
+.white8 p{
+    position: absolute;
+    line-height: 300%;
+    width: 500px;
+    left: 150px;
+    top: 950px;
+}
+.white9{
+    position:relative;
+    background-color:rgba(255,255,255,0.3);
+    border-radius: 50px;
+    /* text-align: center; */
+    width:1700px;
+    height:2000px;
+    left:160px;
+    /* top: 150px; */
+    z-index: 10;
+}
+.white9 img{
+    position: absolute;
+    text-align: center;
+    top: 50px;
+    left:380px;
+    z-index: 9;
+}
+.white9 p{
+    position: absolute;
+    line-height: 300%;
+    width: 500px;
+    left: 380px;
+    bottom: 250px;
+}
+.white10{
+    position:relative;
+    background-color:rgba(255,255,255,0.3);
+    border-radius: 50px;
+    /* text-align: center; */
+    width:1700px;
+    height:2000px;
+    left:160px;
+    /* top: 150px; */
+    z-index: 10;
+}
+.white10 img{
+    position: absolute;
+    text-align: center;
+    top: 50px;
+    left:510px;
+    z-index: 9;
+}
+.white10 p{
+    position: absolute;
+    line-height: 300%;
+    width: 500px;
+    left: 510px;
+    bottom: 150px;
+}
+
+
+/*フッター*/
+footer{
+    position: relative;
+    width: 1920px;
+    height: 140px; 
+    background-color: #48d1cc;
+    bottom: 0; 
+    left: 0; 
+    /* align-items: center; */
+    /* justify-content: space-between;  */
+    /* z-index: 13; */
+}
+    /* footer nav{
+        width: 100%;
+    } */
+    footer img{
+        position: absolute;
+        left: 40px;
+        bottom: 20px;
+    }
